@@ -1,0 +1,157 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .heading-para {
+    text-align: center;
+  }
+
+  .form-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+
+    .form {
+      width: 50%;
+
+      form input,
+      textarea {
+        background-color: $card-BgColor;
+        padding: 1.5rem 1.5rem;
+        border: none;
+        outline: none;
+        font-size: 1.8rem;
+        border-radius: 5px;
+      }
+
+      form {
+        &:first-child input {
+          margin-right: 3rem;
+          width: 42%;
+        }
+
+        input[type="email"] {
+          margin: 2rem 0;
+          width: 88%;
+        }
+
+        textarea {
+          width: 88%;
+        }
+      }
+
+      .form-btn {
+        display: flex;
+        justify-content: flex-end;
+        width: 88%;
+
+        button {
+          padding: 2rem 5.5rem;
+        }
+      }
+    }
+
+    .btn {
+      background-color: $btn-bg-color;
+      margin: 2rem 0;
+      border: none;
+      outline: none;
+      transition: all 0.9s linear;
+
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+
+  .form-desc {
+    width: 40%;
+
+    p {
+      padding-right: 7.5rem;
+      line-height: 2.9rem;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .contact-section {
+    .form-section {
+      .form {
+        form {
+          input[type="text"] {
+            width: 42%;
+            margin-right: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-section {
+    .form-section {
+      .form {
+        form {
+          input[type="text"] {
+            width: 42%;
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .contact-section {
+    .form-section {
+      flex-direction: column;
+      align-items: center;
+      .form {
+        width: 90%;
+        form {
+          input[type="text"] {
+            width: 100%;
+            margin-top: 2rem;
+          }
+
+          input[type="email"],
+          textarea,
+          .form-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .form-desc {
+      width: 90%;
+      margin-top: 4rem;
+      p {
+        padding: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-section {
+    padding: 10rem 5rem;
+    .section-heading {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .contact-section {
+    padding: 10rem 3rem;
+  }
+}

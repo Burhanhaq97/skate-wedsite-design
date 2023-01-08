@@ -1,11 +1,11 @@
 import React from "react";
-import PriceCard from "./PriceCard"
+import PriceCard from "./PriceCard";
 
 const PriceSection = () => {
   return (
     <>
       <section className="section price-section ">
-        <div className="price-section-heading service-section-top">
+        <div className="price-section-heading">
           <h2 className="section-heading">SESSION PRICING </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
@@ -14,9 +14,9 @@ const PriceSection = () => {
           </p>
         </div>
         <div className="price-section-card">
-        <PriceCard cardHeading='Basic' price='47'  />
-        <PriceCard cardHeading='PREMIUM' price='200'/>
-        <PriceCard cardHeading='PROFESSIONAL' price='750'/>
+          <PriceCard cardHeading="Basic" price="47" />
+          <PriceCard cardHeading="PREMIUM" price="200" />
+          <PriceCard cardHeading="PROFESSIONAL" price="750" />
         </div>
       </section>
     </>

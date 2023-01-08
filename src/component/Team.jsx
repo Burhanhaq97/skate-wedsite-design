@@ -6,7 +6,7 @@ const Card = (props) => {
   const { name, role, img, facebook, instagram, twitter } = props;
   return (
     <div className="team-card">
-      <img src={img} alt="team-img" />
+      <img src={img} loading="lazy" alt="team-img" />
       <h2 className="team-name"> {name} </h2>
       <p className="team-role"> {role} </p>
       <div className="team-links">

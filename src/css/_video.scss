@@ -1,0 +1,131 @@
+.section-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 70.5%;
+    height: 72.7%;
+    object-fit: cover;
+  }
+
+  video {
+    width: 80%;
+    text-align: center;
+  }
+
+  .video-icon {
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1754px) {
+  .section-video img {
+    width: 73%;
+    height: 78.1%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .section-video img {
+    width: 71.6%;
+    height: 74.5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-video img {
+    width: 69.6%;
+    height: 70.5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-video img {
+    width: 67.6%;
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section-video {
+    img {
+      width: 80%;
+      height: 52.5%;
+    }
+    video {
+      width: 100%;
+    }
+    .video-icon {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-video {
+    img {
+      width: 81%;
+      height: 46%;
+    }
+    video {
+      width: 105%;
+    }
+    .video-icon {
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-video {
+    img {
+      width: 80%;
+      height: 32%;
+    }
+    video {
+      width: 115%;
+    }
+    .video-icon {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-video {
+    img {
+      width: 84%;
+      height: 31%;
+    }
+    video {
+      width: 130%;
+    }
+    .video-icon {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .section-video {
+    img {
+      height: 25%;
+    }
+    video {
+      width: 150%;
+    }
+    .video-icon {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

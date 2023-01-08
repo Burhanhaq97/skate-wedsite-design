@@ -1,14 +1,17 @@
 import React from "react";
+import { useState } from "react";
+import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
   return (
     <>
       <header>
         <h1 className="logo">SKATER</h1>
         <nav>
-          <ul>
+          <ul className={show ? "show-menu" : ""}>
             <li>
-              <a href="#home" className="nav-link home-link">
+              <a href="#" className="nav-link home-link">
                 Home
               </a>
             </li>
@@ -38,19 +41,26 @@ const Header = () => {
               </a>
             </li>
           </ul>
+          <div onClick={() => setShow(!show)}>
+            {show ? (
+              <RxCross2 className="menu" />
+            ) : (
+              <RxHamburgerMenu className="menu" />
+            )}
+          </div>
         </nav>
       </header>
 
       <section className="section hero-section" id="home">
-        <h1 className="header-heading">hi i'm john and i skate a lot</h1>
+        <h1 className="header-heading">
+          hi i'm john and i <br /> skate a lot
+        </h1>
         <p className="section-pera">
-          Lorem, ipsum dolor consecrator adipisicing elite. Est bandit's
+          Lorem, ipsum dolor consecrator adipisicing elite. <br /> Est bandit's
           adipisicing!
         </p>
         <a href="#contact">
-        <button className="btn btn-primary">
-          Get in touch
-        </button>
+          <button className="btn btn-primary">Get in touch</button>
         </a>
       </section>
     </>

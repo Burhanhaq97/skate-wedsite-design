@@ -1,0 +1,141 @@
+.price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .price-section-heading {
+    width: 70rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
+    p {
+      line-height: 2.8rem;
+      margin: 1.5rem 0;
+    }
+  }
+
+  .price-section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: $para-color;
+
+    .price-card {
+      width: 35rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $card-BgColor;
+      padding: 5rem 5rem;
+      border-radius: 5px;
+      gap: 2.5rem;
+
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+
+      .price-div {
+        text-align: center !important;
+
+        span {
+          font-size: 1.5rem;
+
+          span {
+            color: $main-heading;
+            font-size: 4.5rem;
+          }
+        }
+      }
+
+      ul li {
+        list-style-image: url("../assets/check-mark1.webp");
+        font-size: 1.6rem;
+        padding: 1rem 0;
+      }
+
+      .btn {
+        background-color: $btn-bg-color !important;
+        border: 0px;
+
+        &:hover {
+          background-color: $black !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .price-section {
+    .price-section-card {
+      .price-card {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .price-section {
+    .price-section-card {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .price-section {
+    .price-section-heading {
+      width: 50rem;
+    }
+    .price-section-card {
+      .price-card {
+        width: 50rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .price-section {
+    .price-section-heading {
+      width: 40rem;
+    }
+    .price-section-card {
+      .price-card {
+        width: 40rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .price-section {
+    .price-section-heading {
+      width: 30rem;
+    }
+    .price-section-card {
+      .price-card {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .price-section {
+    .price-section-heading {
+      width: 20rem;
+    }
+    .price-section-card {
+      .price-card {
+        width: 27rem;
+      }
+    }
+  }
+}

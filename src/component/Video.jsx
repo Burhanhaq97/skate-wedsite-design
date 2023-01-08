@@ -20,9 +20,15 @@ const Video = () => {
   return (
     <>
       <section className="section section-video">
-        <img className="video-tb" src={sectionImg2} ref={img} />
+        <img className="video-tb" src={sectionImg2} loading="lazy" ref={img} />
         <video src={Skateboarder} ref={video} />
-        <img onClick={playVideo} className="video-icon" src={play} ref={icon} />
+        <img
+          onClick={playVideo}
+          className="video-icon"
+          src={play}
+          loading="lazy"
+          ref={icon}
+        />
       </section>
     </>
   );

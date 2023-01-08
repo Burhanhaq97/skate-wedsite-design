@@ -1,5 +1,5 @@
-import team from "../assets/team.webp"
-import team2 from "../assets/team2.webp"
+import team from "../assets/team.webp";
+import team2 from "../assets/team2.webp";
 const teamData = [
   {
     id: 1,

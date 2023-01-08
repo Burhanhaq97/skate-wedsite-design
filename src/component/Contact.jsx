@@ -1,9 +1,9 @@
 import React from "react";
 
 const Contact = () => {
-  const formSubmit = (event)=>{
+  const formSubmit = (event) => {
     event.preventDefault();
-  }
+  };
   return (
     <>
       <section className="section contact-section" id="contact">
@@ -11,23 +11,38 @@ const Contact = () => {
           <p className="heading-para">GET IN TOUCH</p>
           <h2>CONTACT ME</h2>
         </div>
-         <div className="form-section">
+        <div className="form-section">
           <div className="form">
-            <form onSubmit={formSubmit} >
-              <input type="text" name="" placeholder="First name" />
-              <input type="text" name="" placeholder="Last name" /> <br />
-              <input type="email" name="" placeholder="Email address" /> <br />
+            <form onSubmit={formSubmit}>
+              <input
+                type="text"
+                name="firstName"
+                autoComplete="off"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                name="lastName"
+                autoComplete="off"
+                placeholder="Last name"
+              />
+              <br />
+              <input
+                type="email"
+                name="email"
+                autoComplete="off"
+                placeholder="Email address"
+              />
+              <br />
               <textarea
-                name=""
+                name="msg"
                 placeholder="Write your message"
                 cols="30"
                 rows="10"
               ></textarea>
               <br />
               <div className="form-btn">
-                <button className="btn">
-                  Sent Message
-                </button>
+                <button className="btn">Sent Message</button>
               </div>
             </form>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialCard, { TestimonialCard2 } from "./TestimonialCard";
+import TestimonialCard from "./TestimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 
@@ -8,9 +8,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import team from "../assets/team.webp"
-import team2 from "../assets/team2.webp"
-import team3 from "../assets/team3.webp"
+import team from "../assets/team.webp";
+import team2 from "../assets/team2.webp";
+import team3 from "../assets/team3.webp";
 
 const Testimonial = () => {
   return (
@@ -23,7 +23,7 @@ const Testimonial = () => {
           spaceBetween={10}
           centeredSlides={true}
           autoplay={{
-            delay: 3500,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -33,14 +33,27 @@ const Testimonial = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <TestimonialCard2 img={team} name='Robert Steward' />
-            <TestimonialCard img={team2} name='Ricky Fisher' />
-            <TestimonialCard2 img={team3} name='Mellisa Griffin' />
+            <TestimonialCard img={team} name="Robert Steward" />
           </SwiperSlide>
+
           <SwiperSlide>
-            <TestimonialCard img={team} name='Robert Steward' />
-            <TestimonialCard2 img={team2} name='Ricky Fisher' />
-            <TestimonialCard img={team3} name='Mellisa Griffin' />
+            <TestimonialCard img={team2} name="Ricky Fisher" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <TestimonialCard img={team3} name="Melisa Griffin" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <TestimonialCard img={team} name="Robert Steward" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <TestimonialCard img={team2} name="Ricky Fisher" />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <TestimonialCard img={team3} name="Melisa Griffin" />
           </SwiperSlide>
         </Swiper>
       </section>

@@ -5,7 +5,12 @@ const ServiceCard = (props) => {
   const { img, title, para } = props;
   return (
     <div className="service-card">
-      <img src={img} alt="service-card-icon" className="service-card-icon" />
+      <img
+        src={img}
+        loading="lazy"
+        alt="service-card-icon"
+        className="service-card-icon"
+      />
       <h3 className="service-card-heading"> {title} </h3>
       <p className="service-card-para"> {para} </p>
     </div>

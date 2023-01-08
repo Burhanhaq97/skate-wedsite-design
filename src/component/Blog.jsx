@@ -1,13 +1,13 @@
 import React from "react";
-import blogImg1 from "../assets/section-img2.webp"
-import blogImg2 from "../assets/section-img.webp"
+import blogImg1 from "../assets/section-img2.webp";
+import blogImg2 from "../assets/section-img.webp";
 
 const BlogCard = (props) => {
   return (
     <>
       <div className="blog-card">
         <div>
-          <img src={props.img} alt="" className="blog-img" />
+          <img src={props.img} loading="lazy" alt="blog" className="blog-img" />
         </div>
         <div>
           <h2 className="blog-heading section-heading">
@@ -15,14 +15,14 @@ const BlogCard = (props) => {
           </h2>
           <p className="blog-time">
             JANUARY 18, 2019 BY
-            <a href="">JAMES COOPER</a>
+            <a href="#">JAMES COOPER</a>
           </p>
           <p className="blog-para">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et
             suscipit iste libero neque. Vitae quidem ducimus voluptatibus nemo
             cum odio ab enim nisi, itaque, libero fuga veritatis culpa quis!
           </p>
-          <a href="" className="blog-btn">
+          <a href="#" className="blog-btn">
             Read More
           </a>
         </div>
@@ -32,7 +32,6 @@ const BlogCard = (props) => {
 };
 
 const Blog = () => {
-
   return (
     <>
       <section className="section blog-section" id="blog">

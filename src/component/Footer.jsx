@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="right-footer">
               <div className="newsletter">
                 <h3>SUBSCRIBE TO NEWSLETTER</h3>
-                <form>
+                <form onSubmit={(e) => e.preventDefault()}>
                   <input type="email" placeholder="Enter Email" />
                   <button type="submit" className="btn">
                     Subscribe
@@ -59,16 +59,16 @@ const Footer = () => {
               <div className="footer-icon-section">
                 <h3>FOLLOW US</h3>
                 <div className="footer-icon">
-                  <a href="">
+                  <a href="#">
                     <FaFacebookF className="team-icon" />
                   </a>
-                  <a href="">
+                  <a href="#">
                     <FaInstagram className="team-icon" />
                   </a>
-                  <a href="">
+                  <a href="#">
                     <FaTwitter className="team-icon" />
                   </a>
-                  <a href="">
+                  <a href="#">
                     <FaLinkedinIn className="team-icon" />
                   </a>
                 </div>

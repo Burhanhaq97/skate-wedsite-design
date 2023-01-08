@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "variable";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Work Sans", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: $main-heading;
+  font-weight: 400;
+}
+
+h3,
+h4 {
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.7rem;
+  color: $para-color;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 10rem 8rem;
+  background-color: $bg-color;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section-heading {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.btn {
+  border: 2px solid $white;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  color: $white;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+@import "header";
+@import "hero-section";
+@import "service";
+@import "performance";
+@import "video";
+@import "number";
+@import "team";
+@import "price";
+@import "faq";
+@import "testimonial";
+@import "blog";
+@import "contact";
+@import "footer.scss";

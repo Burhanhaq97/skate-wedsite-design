@@ -1,0 +1,73 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/hero.webp), no-repeat, center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header-heading {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 500;
+    padding: 1rem 25rem;
+    text-align: center;
+  }
+
+  .section-pera {
+    color: $white;
+    font-size: 2rem;
+    padding: 0 33rem;
+    text-align: center;
+  }
+
+  .btn-primary {
+    background-color: transparent;
+    margin-top: 5rem;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-section {
+    .header-heading {
+      font-size: 4.5rem;
+      padding: 1rem;
+    }
+    .section-pera {
+      padding: 0 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-section {
+    .header-heading {
+      font-size: 3rem;
+    }
+    .section-pera {
+      font-size: 1.7rem;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero-section {
+    .header-heading {
+      font-size: 2rem;
+    }
+    .section-pera {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+  }
+  .btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+}

@@ -1,0 +1,93 @@
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 8rem 5rem;
+
+  .service-section-top {
+    text-align: center;
+    width: 50%;
+
+    .service-para {
+      padding: 2rem 0;
+      line-height: 3rem;
+    }
+  }
+
+  .service-section-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    .service-card {
+      width: 37rem;
+
+      .service-card-heading {
+        padding: 1.5rem 0;
+        font-size: 2rem;
+      }
+
+      .service-card-para {
+        line-height: 2.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-heading {
+    font-size: 2.5rem;
+  }
+
+  .service-section {
+    .service-section-card {
+      .service-card {
+        .service-card-heading {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service-section {
+    .service-section-top {
+      width: 80%;
+    }
+    .service-section-card {
+      .service-card {
+        .service-card-heading {
+          font-size: 1.6rem;
+        }
+        .service-card-para {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service-section {
+    .service-section-top {
+      width: 100%;
+      .section-heading {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service-section {
+    .service-section-card {
+      .service-card {
+        width: 20rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.number-section {
+  height: 49vh;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13rem;
+
+  .num {
+    text-align: center;
+
+    h2 {
+      font-weight: 500;
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 6rem;
+        height: 0.5rem;
+        background-color: $para-color;
+        position: absolute;
+        top: 94%;
+        left: 50%;
+        border-radius: 20px;
+        transform: translateX(-50%);
+      }
+    }
+
+    p {
+      color: $white;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .number-section {
+    .num {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .number-section {
+    gap: 7rem;
+    align-content: center;
+    flex-direction: column;
+    height: 35rem;
+    .num {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .number-section {
+    .num {
+      text-align: -webkit-center;
+      p {
+        width: 10rem;
+      }
+      h2 {
+        font-size: 3rem;
+        font-weight: normal;
+        &::after {
+          width: 4rem;
+          height: 0.3rem;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .number-section {
+    height: 35rem;
+    gap: 7rem 3rem;
+    .num {
+      width: 14rem;
+      p {
+        width: 8rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .number-section {
+    height: 25rem;
+    gap: 7rem 3rem;
+    .num {
+      width: 10rem;
+    }
+  }
+}
